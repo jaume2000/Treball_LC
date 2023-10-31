@@ -52,11 +52,8 @@ alicia_text = """     A través de la tarde color de oro
 
 alicia_text = ' '.join([line.strip() for line in alicia_text.split('\n') if line.strip() != ''])
 
-#stanza.download('es')
+stanza.download('es')
 nlp = stanza.Pipeline('es', processors='tokenize,pos')
-
-# Texto de ejemplo para etiquetar
-texto = "Stanza es una biblioteca de procesamiento de lenguaje natural."
 
 # Procesamiento del texto
 doc = nlp(alicia_text)
