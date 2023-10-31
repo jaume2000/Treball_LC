@@ -54,7 +54,6 @@ alicia_text = ' '.join([line.strip() for line in alicia_text.split('\n') if line
 
 stanza.download('es')
 nlp = stanza.Pipeline('es', processors='tokenize,pos')
-
 # Procesamiento del texto
 doc = nlp(alicia_text)
 
